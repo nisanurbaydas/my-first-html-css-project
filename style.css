@@ -1,0 +1,778 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+    box-sizing: border-box;
+    /* eklenilen resmin boyutunu sabitlemek icin */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Grandstander', cursive;
+}
+
+#social {
+    background-color: coral;
+    color: cornsilk;
+    height: 49px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 14px;
+    text-align: right;
+    padding: 15px;
+}
+
+.searchBox {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-30%, -65%);
+    background: cornsilk;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.searchBox:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchBtn {
+    background: white;
+}
+
+
+.searchBtn {
+    color: darkorange;
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: cornsilk;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.signFont {
+    float: right;
+    letter-spacing: 2px;
+}
+
+.signLink {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+font {
+    float: left;
+    letter-spacing: 2px;
+}
+
+
+#social > i {
+    margin-right: 15px;
+}
+
+#social > i:hover {
+    /* hover: changes when mouse over on a element */
+    opacity: 0.8;
+    /* 
+The opacity property specifies the opacity/transparency of an element */
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* Radius: Add rounded corners to <div> element */
+    position: relative;
+    color: coral;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+#headerResim {
+    width: : 100%;
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    height: auto;
+    background-color: antiquewhite;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+nav ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav li a {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: coral;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: lightsalmon;
+}
+
+nav li a:active {
+    color: white;
+    background-color: darksa;
+}
+
+
+i {
+    margin-right: 10px;
+}
+
+
+main {
+    margin: auto;
+    height: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.icerik {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.picBlock {
+    width: 50%;
+    margin: auto;
+}
+
+.pic {
+    width: 60%;
+    height: 90%;
+    margin-left: 120px;
+    ;
+    border-radius: 10px;
+    transition: opacity 0.8s;
+    background-color: red;
+}
+
+.pic:hover {
+    opacity: 0.6;
+}
+
+h3 {
+    color: coral;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid coral;
+}
+
+.ingredientsHeader {
+    border-bottom: 2px solid coral;
+    margin: 10px;
+    color: coral;
+    text-align: center;
+    padding: 10px;
+}
+
+.contentText {
+    color: dimgrey;
+    text-align: center;
+}
+
+#more {
+    display: none;
+}
+
+.btnDevam {
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-color: coral;
+    color: antiquewhite;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.btnDevam:hover {
+    opacity: 0.8;
+}
+
+footer {
+    width: 100%;
+    color: coral;
+    line-height: 75px;
+    text-align: center;
+}
+
+#sigInFooter {
+    position: absolute ! important;
+    top: 700px ! important;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: coral;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.addRecipeh1 {
+    text-align: center;
+    background-color: antiquewhite;
+    color: coral;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+#macncheesePic {
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 5px;
+}
+
+.macnCheesePicBlock {
+    width: 300px;
+    height: 300px;
+    background-color: seashell;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.explanationBlock {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.explanationWrite {
+    text-align: center;
+    padding: 2px;
+    font-size: 20px;
+    font-family: cambry;
+    text-indent: 40px;
+    color: dimgray;
+}
+
+.ingredientsWrite {
+    font-size: 20px;
+    font-family: cambry;
+    color: dimgray;
+}
+
+.instructionsWrite {
+    padding: 5px;
+    font-size: 20px;
+    font-family: cambry;
+    text-indent: 40px;
+    color: dimgray;
+}
+
+.recipeBlock {
+    width: 350px;
+    height: 440px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+.recipePicBlock {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.recipePic {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+    border-radius: 5px;
+}
+
+.recipePic:hover {
+    transform: scale(1.1);
+}
+
+.recepyName {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.recepyName a {
+    color: coral;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+.userInfoBlock {
+    width: 100%;
+    height: 55px;
+    margin-top: 2px;
+}
+
+.userImage {
+    float: left;
+    margin: 5px;
+}
+
+.userName {
+    width: 40%;
+    height: 50%;
+    float: left;
+}
+
+.userNameLink {
+    height: 75px;
+    line-height: 40px;
+    text-decoration: none;
+    color: coral;
+    padding-left: 5px;
+}
+
+.totalRate {
+    width: 45%;
+    float: right;
+}
+
+.totalRate input {
+    display: none;
+}
+
+.totalRate label {
+    cursor: pointer;
+    width: 20px;
+    display: inline-block;
+    float: right;
+}
+
+.totalRate label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: darkorange;
+}
+
+.categoryInfoBlock {
+    width: 100%;
+    height: 25px;
+    margin-top: 2px;
+    text-align: center;
+    border-bottom: 2px solid coral;
+}
+
+.categoryLink {
+    text-decoration: none;
+    color: coral;
+    font-size: 20px;
+}
+
+.rateHeader {
+    font-size: 16px;
+    color: coral;
+    text-align: center;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.rating {
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -34%) rotateY(180deg);
+    display: flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: gainsboro;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: darkorange;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
+    opacity: 1;
+}
+
+.userBlock {
+    width: 250px;
+    height: 50px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.rateBlock {
+    width: 350px;
+    height: 100px;
+    float: right;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.ingredientsBlock {
+    display: inline-block;
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    margin-left: 90px;
+    border-radius: 5px;
+}
+
+.serPreCo {
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    margin: 10px;
+    margin-left: 180px;
+    border-radius: 5px;
+    float: left;
+}
+
+.serPreCoSub {
+    width: 340px;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 60px;
+    margin-top: 35px;
+    background-color: white;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+}
+
+.serPreCoHead {
+    padding: 10px;
+    color: coral;
+    border-bottom: 6px solid coral;
+    text-align: center;
+}
+
+.serPreCoW {
+    font-family: cambry;
+    text-align: center;
+    color: dimgray;
+    font-size: 20px;
+}
+
+
+.instructionsBlock {
+    width: 100%;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nutritionBlock {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.nutritionWrite {
+    font-size: 20px;
+    font-family: cambry;
+    color: dimgray;
+    text-align: center;
+}
+
+.userandrateBlock {
+    width: 100%;
+    height: 100px;
+    float: inherit;
+    margin-top: 10px;
+}
+
+.createRecipeBox {
+    width: 100%;
+    color: antiquewhite;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: 1px solid #ff7f50;
+    border-radius: 5px;
+}
+
+.textbox textarea {
+    border: none;
+    outline: none;
+    background: none;
+    color: dimgray;
+    font-size: 18px;
+    width: 97%;
+    float: left;
+    margin: 10px;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 5px solid #ff7f50;
+    border-radius: 5px;
+    color: darkorange;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.textareaSpan {
+    position: absolute;
+    right: 17%;
+    bottom: 46%;
+    font-weight: 400;
+    color: dimgray;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.textareaSpan2 {
+    position: absolute;
+    right: 17%;
+    bottom: 26%;
+    font-weight: 400;
+    color: dimgray;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.textareaSpan3 {
+    position: absolute;
+    right: 17%;
+    bottom: 6%;
+    font-weight: 400;
+    color: dimgray;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.textareaSpan4 {
+    position: absolute;
+    right: 17%;
+    bottom: -20%;
+    font-weight: 400;
+    color: dimgray;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.textboxPrepTime {
+    width: 10%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 4px;
+    border: 1px solid #ff7f50;
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+}
+
+.textboxPrepTime1 {
+    width: 20%;
+    height: 61px;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 12px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    float: left;
+    background-color: coral;
+}
+
+.prepTime {
+    padding: 1px;
+    text-align: center;
+    color: seashell;
+    font-size;
+    1px;
+}
+
+.textboxPrepTime input {
+    border: none;
+    outline: none;
+    background: none;
+    color: dimgray;
+    font-size: 18px;
+    width: 97%;
+    float: left;
+    margin: 10px;
+}
+
+.signBox {
+    width: 25%;
+    margin: auto;
+    display: block;
+}
+
+.textboxSign {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ff7f50;
+}
+
+.textboxSign i {
+    width: 26px;
+    float: left;
+    text-align: center;
+    color: coral;
+}
+
+.textboxSign input {
+    border: none;
+    outline: none;
+    background: none;
+    color: dimgray;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.sign-btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #ff7f50;
+    color: darkorange;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
